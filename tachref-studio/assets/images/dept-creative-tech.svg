@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg7" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#181024" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="holo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff00c8" stop-opacity="0.85"/>
+      <stop offset="30%" stop-color="#3a86ff" stop-opacity="0.85"/>
+      <stop offset="70%" stop-color="#00f5d4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ffbe0b" stop-opacity="0.85"/>
+    </linearGradient>
+    <filter id="glow7">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg7)"/>
+  <g transform="translate(400,290)">
+    <ellipse cx="0" cy="0" rx="200" ry="70" fill="none" stroke="url(#holo)" stroke-width="3" transform="rotate(-25)"/>
+    <ellipse cx="0" cy="0" rx="200" ry="70" fill="none" stroke="url(#holo)" stroke-width="3" transform="rotate(35)"/>
+    <ellipse cx="0" cy="0" rx="200" ry="70" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(95)"/>
+    <circle cx="0" cy="0" r="32" fill="#fff" opacity="0.9" filter="url(#glow7)"/>
+    <text x="0" y="220" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="11" letter-spacing="4">[ GENERATIVE SYSTEMS / NEURAL SHADERS . EXPERIMENTAL ]</text>
+  </g>
+</svg>

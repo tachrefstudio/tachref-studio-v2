@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg4" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e1a24" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#08080a" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="cyanpurp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#7000ff" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#ff007b" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg4)"/>
+  <g transform="translate(400,290)">
+    <polygon points="0,-140 120,-70 120,70 0,140 -120,70 -120,-70" fill="url(#cyanpurp)" opacity="0.75"/>
+    <polygon points="0,-140 120,-70 0,0 -120,-70" fill="rgba(255,255,255,0.2)"/>
+    <polygon points="0,0 120,-70 120,70 0,140" fill="rgba(0,0,0,0.4)"/>
+    <circle cx="0" cy="0" r="180" fill="none" stroke="#00f0ff" stroke-width="1" stroke-dasharray="12 8" opacity="0.5"/>
+    <line x1="-180" y1="-90" x2="180" y2="90" stroke="#ff007b" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="220" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-family="monospace" font-size="11" letter-spacing="4">[ VOID RUNNER ENGINE / THREE.JS . WEBGPU ]</text>
+  </g>
+</svg>
