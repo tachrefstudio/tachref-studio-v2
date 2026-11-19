@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Experimental Lab — TACHREF STUDIO®</title>
+  <meta name="description" content="TACHREF STUDIO Experimental Lab: robotics prototypes, creative coding, game engines, and emerging technology explorations.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="ambient-glow"></div>
+  <div class="ambient-glow-bottom"></div>
+  
+  <div class="viewport-grid" aria-hidden="true">
+    <div class="grid-col-line"></div>
+    <div class="grid-col-line"></div>
+    <div class="grid-col-line"></div>
+    <div class="grid-col-line"></div>
+    <div class="grid-col-line"></div>
+  </div>
+
+  <div class="site-wrapper">
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="header-inner">
+          <a href="index.html" class="brand-logo" aria-label="TACHREF STUDIO Home">
+            <div class="brand-symbol">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="16,2 30,16 16,30 2,16" stroke="#ffffff" stroke-width="2.5"/>
+                <polygon points="16,8 24,16 16,24 8,16" fill="#ff5e00"/>
+              </svg>
+            </div>
+            <span class="brand-text">TACHREF<span>®</span></span>
+          </a>
+
+          <nav>
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Company</a></li>
+              <li><a href="departments.html">Departments</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="lab.html" class="active">The Lab</a></li>
+              <li><a href="community.html">Community</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="header-actions">
+            <a href="contact.html" class="btn-glow">Start a Conversation</a>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Company</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="lab.html" class="active">The Lab</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div>
+        <a href="contact.html" class="btn-glow" style="width: 100%;">Start a Conversation</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Page Header -->
+      <section style="padding: 100px 0 40px;">
+        <div class="container">
+          <span class="section-label">[ 05 — EXPERIMENTAL DIVISION ]</span>
+          <h1 class="editorial-title" style="font-size: clamp(2.6rem, 6vw, 5rem);">
+            THE FUTURE STARTS<br>WITH EXPERIMENTS.
+          </h1>
+          <p class="editorial-sub" style="max-width: 720px; margin-bottom: 40px;">
+            The Lab is our R&amp;D sanctuary where conventional product deadlines do not apply. Here we break things, formulate custom shaders, build kinetic robotics, and test speculative interactions.
+          </p>
+        </div>
+      </section>
+
+      <!-- Live Interactive Laboratory Canvas -->
+      <section class="page-section" style="padding-top: 0;">
+        <div class="container">
+          <div class="lab-interactive-canvas-box" style="height: 520px; margin-bottom: 64px;">
+            <div class="canvas-toolbar">
+              <span class="canvas-status">INTERACTIVE WEBLAB // HARMONIC PARTICLE FIELD</span>
+              <span>MOVE CURSOR TO ALTER GRAVITATIONAL VECTOR CURVATURE</span>
+            </div>
+            <canvas id="labCanvas"></canvas>
+          </div>
+
+          <!-- Laboratory Proving Grounds Grid -->
+          <div class="section-header">
+            <div>
+              <span class="section-label">[ EXPERIMENTAL BENCHMARKS ]</span>
+              <h2 class="editorial-title" style="font-size: 2.2rem;">PROTOTYPES IN REPOSITORY</h2>
+            </div>
+          </div>
+
+          <div class="departments-grid">
+
+            <!-- Exp 1 -->
+            <article class="department-card">
+              <div>
+                <div class="dept-header">
+                  <span class="dept-number">EXP_01</span>
+                  <span class="dept-status">[ ROBOTICS PROTOTYPE ]</span>
+                </div>
+                <div class="dept-artwork-wrap">
+                  <img src="assets/images/lab-1.svg" alt="Inverse Kinematics Actuator">
+                </div>
+                <h3 class="dept-title">INVERSE KINEMATICS ACTUATOR</h3>
+                <p class="dept-desc">
+                  Closed-loop 4-DOF robotic arm utilizing brushless servomotors and high-precision magnetic encoders. Features sub-millimeter positional repeatability.
+                </p>
+              </div>
+              <div class="dept-footer">
+                <span class="dept-specs">ESP32-S3 / CAN-BUS / ROS2</span>
+                <span class="mono-tag">HARDWARE V2</span>
+              </div>
+            </article>
+
+            <!-- Exp 2 -->
+            <article class="department-card">
+              <div>
+                <div class="dept-header">
+                  <span class="dept-number">EXP_02</span>
+                  <span class="dept-status">[ CREATIVE CODING ]</span>
+                </div>
+                <div class="dept-artwork-wrap">
+                  <img src="assets/images/lab-2.svg" alt="Quantum Raymarching Shaders">
+                </div>
+                <h3 class="dept-title">QUANTUM RAYMARCHING SHADERS</h3>
+                <p class="dept-desc">
+                  Signed Distance Field (SDF) raymarching engine rendering procedural volumetric geometries and chromatic dispersion directly inside single fragment passes.
+                </p>
+              </div>
+              <div class="dept-footer">
+                <span class="dept-specs">GLSL / WEBGPU / MATHEMATICA</span>
+                <span class="mono-tag">60 FPS 4K</span>
+              </div>
+            </article>
+
+            <!-- Exp 3 -->
+            <article class="department-card">
+              <div>
+                <div class="dept-header">
+                  <span class="dept-number">EXP_03</span>
+                  <span class="dept-status">[ GAME PROTOTYPE ]</span>
+                </div>
+                <div class="dept-artwork-wrap">
+                  <img src="assets/images/lab-3.svg" alt="Procedural Terrain Voxel Mesh">
+                </div>
+                <h3 class="dept-title">VOXEL TERRAIN ENGINE</h3>
+                <p class="dept-desc">
+                  Infinite procedural 3D planetary mesh generated in real-time through multi-threaded Simplex noise octaves. Realized with custom Web Worker pipelines.
+                </p>
+              </div>
+              <div class="dept-footer">
+                <span class="dept-specs">THREE.JS / WEB WORKERS</span>
+                <span class="mono-tag">BUILD 0.8.4</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- Collaborative Lab Callout -->
+      <section class="manifesto-box">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 32px;">
+          <div>
+            <span class="section-label">[ OPEN RESEARCH PROTOCOL ]</span>
+            <h3 class="editorial-title" style="font-size: 2rem; margin-bottom: 12px;">HAVE A SPECULATIVE EXPERIMENT?</h3>
+            <p class="editorial-sub">We frequently collaborate with researchers, roboticists, and creative coders on open-source prototypes.</p>
+          </div>
+          <div>
+            <a href="contact.html" class="btn-glow">Propose a Lab Collaboration</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo" aria-label="TACHREF STUDIO Home">
+              <div class="brand-symbol">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <polygon points="16,2 30,16 16,30 2,16" stroke="#ffffff" stroke-width="2.5"/>
+                  <polygon points="16,8 24,16 16,24 8,16" fill="#ff5e00"/>
+                </svg>
+              </div>
+              <span class="brand-text">TACHREF STUDIO<span>®</span></span>
+            </a>
+            <p>
+              An independent creative technology studio crafting digital products, robotics prototypes, game engines, and graphic identities designed for the next frontier.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">DEPARTMENTS</h4>
+            <ul class="footer-links">
+              <li><a href="departments.html#dept-01">01 Web Development</a></li>
+              <li><a href="departments.html#dept-02">02 Graphic Design</a></li>
+              <li><a href="departments.html#dept-03">03 Branding &amp; Logo</a></li>
+              <li><a href="departments.html#dept-04">04 Game Development</a></li>
+              <li><a href="departments.html#dept-05">05 UI/UX Design</a></li>
+              <li><a href="departments.html#dept-06">06 Robotics</a></li>
+              <li><a href="departments.html#dept-07">07 Creative Technology</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">NAVIGATION</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Company / About</a></li>
+              <li><a href="departments.html">Seven Departments</a></li>
+              <li><a href="projects.html">Project Showcase</a></li>
+              <li><a href="lab.html">The Experimental Lab</a></li>
+              <li><a href="community.html">Community Space</a></li>
+              <li><a href="contact.html">Contact &amp; Bookings</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-heading">CONNECT</h4>
+            <ul class="footer-links">
+              <li><a href="https://discord.gg/YM5YfK9tEb" target="_blank" rel="noopener noreferrer">Discord Server ↗</a></li>
+              <li><a href="https://github.com/tachrefstudio" target="_blank" rel="noopener noreferrer">GitHub Studio ↗</a></li>
+              <li><a href="https://www.instagram.com/tachref_studio/" target="_blank" rel="noopener noreferrer">Instagram ↗</a></li>
+              <li><a href="contact.html">Direct Transmission ↗</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="footer-copyright">
+            © 2024–2026 TACHREF STUDIO®. ALL RIGHTS RESERVED. REGISTERED TRADEMARK.
+          </div>
+          <div class="footer-meta">
+            <span class="live-clock">UTC 00:00:00 // STUDIO OPERATIONAL</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
